@@ -1,7 +1,7 @@
 #include <stdio.h>
 int main ()
 {
-    int n,i,j,k=0,d=0;
+    int n,i,j,k,max=0;
     scanf ("%d",&n);
     int score[n];
     if(n>=2&&n<=1000)
@@ -17,14 +17,12 @@ int main ()
                 if(score[i]==score[j])
                 {
                     k++;
-                }
-                else
-                {
-                    d++;
+                    max=k;
                 }
             }
+            k=0;
         }
     }
-    printf ("%d %d",k,d);
+    printf("%d",max);
     return 0;
 }
