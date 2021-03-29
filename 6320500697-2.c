@@ -1,7 +1,7 @@
 #include <stdio.h>
 int main ()
 {
-    int n,i,m=0;
+    int n,i,max=0;
     scanf ("%d",&n);
     int score[n];
     for(i=0;i<n;i++)
@@ -10,11 +10,17 @@ int main ()
     }
     for(i=0;i<n;i++)
     {
-       if(score[i]>=m)
+       if(score[i]>=max)
        {
-           m=score[i];
+           max=score[i];
        }
     }
-    printf ("%d",m);
+    for(i=0;i<n;i++)
+    {
+       if(score[i]==max)
+       {
+           printf ("%d ",i);
+       }
+    }
     return 0;
 }
