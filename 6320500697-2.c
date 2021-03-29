@@ -19,7 +19,10 @@ int main ()
                     k++;
                     printf ("%d",k);
                 }
-                max=k;
+                if(k>max)
+                {
+                    max=k;
+                }
             }
             k=0;
         }
