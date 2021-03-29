@@ -1,7 +1,7 @@
 #include <stdio.h>
 int main ()
 {
-    int n,i,max=0;
+    int n,i,j,k=0,d=0;
     scanf ("%d",&n);
     int score[n];
     if(n>=2&&n<=1000)
@@ -10,20 +10,21 @@ int main ()
         {
             scanf ("%d",&score[i]);
         }
-        for(i=0; i<n; i++)
+        for(i=0;i<n;i++)
         {
-            if(score[i]>=max)
+            for(j=0;j<n;j++)
             {
-                max=score[i];
-            }
-        }
-        for(i=0; i<n; i++)
-        {
-            if(score[i]==max)
-            {
-                printf ("%d %d ",i+1,score[i]);
+                if(score[i]==score[j])
+                {
+                    k++;
+                }
+                else
+                {
+                    d++;
+                }
             }
         }
     }
+    printf ("%d %d",k,d);
     return 0;
 }
