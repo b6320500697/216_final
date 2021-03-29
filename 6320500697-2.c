@@ -1,7 +1,7 @@
 #include <stdio.h>
 int main ()
 {
-    int n,i,j,k,max=0;
+    int n,i,j,k,max=0,max2;
     scanf ("%d",&n);
     int score[n];
     if(n>=2&&n<=1000)
@@ -36,7 +36,7 @@ int main ()
             }
             if(k==max)
             {
-                printf ("%d ",score[i]);
+               printf ("%d ",score[i]);
             }
             k=0;
         }
