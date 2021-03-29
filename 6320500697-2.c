@@ -33,10 +33,10 @@ int main ()
                 {
                     k++;
                 }
-                if(k==max)
-                {
-                    printf ("%d ",score[i]);
-                }
+            }
+            if(k==max)
+            {
+                printf ("%d ",score[i]);
             }
             k=0;
         }
