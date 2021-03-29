@@ -17,7 +17,6 @@ int main ()
                 if(score[i]==score[j])
                 {
                     k++;
-                    printf ("%d",k);
                 }
                 if(k>max)
                 {
@@ -26,7 +25,21 @@ int main ()
             }
             k=0;
         }
+        for(i=0;i<n;i++)
+        {
+            for(j=0;j<n;j++)
+            {
+                if(score[i]==score[j])
+                {
+                    k++;
+                }
+                if(k==max)
+                {
+                    printf ("%d ",score[i]);
+                }
+            }
+            k=0;
+        }
     }
-    printf("%d",max);
     return 0;
 }
