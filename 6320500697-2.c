@@ -36,26 +36,16 @@ int main ()
             }
             if(k==max)
             {
-                d++;
-                if(d==1)
+                for(d=0;d<n;d++)
                 {
-                    max2=score[i];
-                }
-                if(score[i]<max2)
-                {
-                    min=score[i];
+                    if(score[d]==score[i])
+                    {
+                        printf ("%d",score[d]);
+                    }
                 }
             }
             k=0;
         }
-    }
-    if(min>0)
-    {
-        printf ("%d %d ",min,max2);
-    }
-    else
-    {
-        printf ("%d",max2);
     }
 
     return 0;
