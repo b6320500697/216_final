@@ -37,6 +37,7 @@ int main ()
             if(k==max)
             {
                printf ("%d ",score[i]);
+               break;
             }
             k=0;
         }
