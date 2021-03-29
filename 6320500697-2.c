@@ -21,7 +21,7 @@ int main ()
         {
             if(score[i]==max)
             {
-                printf ("%d ",i+1);
+                printf ("%d %d ",i+1,score[i]);
             }
         }
     }
