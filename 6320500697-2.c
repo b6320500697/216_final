@@ -17,8 +17,9 @@ int main ()
                 if(score[i]==score[j])
                 {
                     k++;
-                    max=k;
+                    printf ("%d",k);
                 }
+                max=k;
             }
             k=0;
         }
